@@ -4,7 +4,7 @@ from jira import JIRA
 
 def jira_setup(project, assignee, title, description, filename='', due=1, comment=''):
     apiKey = 'QnucOPUGJMdyos3Yg3ZvE83C'
-    jira = JIRA(basic_auth=('will.hickson@shoregrp.com', apiKey),
+    jira = JIRA(basic_auth=('abcdef@gmail.com', apiKey),
                 options={"server": 'https://shoregroup.atlassian.net'})
     duedate = str((datetime.date.today() + datetime.timedelta(days=due)).strftime('%Y-%m-%d'))
     issue_list = [{
