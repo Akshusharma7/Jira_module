@@ -5,7 +5,7 @@ from jira import JIRA
 def jira_setup(project, assignee, title, description, filename='', due=1, comment=''):
     '''This code will Create Jira ticket and return the Issue Key of the ticket Created. '''
     
-    apiKey = '*********************'
+    apiKey = '*********************' #apiKey you will find in Jira page
     jira = JIRA(basic_auth=('abcdef@gmail.com', apiKey),
                 options={"server": 'https://abcdef.xyz.net'})
     duedate = str((datetime.date.today() + datetime.timedelta(days=due)).strftime('%Y-%m-%d'))
